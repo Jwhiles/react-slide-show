@@ -6,14 +6,16 @@ const mySlides = [
   {
     title: <h1>hello welcome to my slide show</h1>,
     content: <p>hit right to proceed</p>,
+
   },
   {
-    title: <h1>wowowo</h1>,
-    content:
-      <div>
-        <p>we moved</p>
-        <p>amazing. try again?</p>
-      </div>
+    title: 'wowowo',
+    titleStyle: `font-size: 2em`,
+    content: 'words and things',
+    contentStyle: `
+      font-size: 1.5em;
+      transform: rotate(20deg);
+      `
   },
   {
     title: <h1>SHIT</h1>,
