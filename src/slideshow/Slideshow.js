@@ -17,18 +17,16 @@ export default class extends Component {
   _handleKeyDown (event) {
     const LEFT = 37
     const RIGHT = 39
-    console.log(event.keyCode)
     switch( event.keyCode ) {
         case LEFT:
-            this.state.slide - 1 >= 0
-              ? this.setState(changeSlide(-1))
-              : null
+          this.state.slide - 1 >= 0
+            ? this.setState(changeSlide(-1))
+            : null
           break;
         case RIGHT:
-          const slide =
-            this.state.slide + 1 < this.props.slides.length
-              ? this.setState(changeSlide(+1))
-              : null
+          this.state.slide + 1 < this.props.slides.length
+            ? this.setState(changeSlide(+1))
+            : null
           break;
         default:
     }
@@ -45,9 +43,7 @@ export default class extends Component {
 
   render() {
     const { slides } = this.props
-    console.log(this.state.slide);
     const currentSlide = slides[this.state.slide];
-    console.log(currentSlide);
     return (
       <div className="slideshow">
         <Slide {...currentSlide} / >

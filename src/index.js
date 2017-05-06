@@ -4,18 +4,25 @@ import Slideshow from './slideshow/Slideshow.js';
 
 const mySlides = [
   {
-    title: <h1>sup bro</h1>,
-    content: <p>it's yo boi</p>,
-    backgroundColor: 'pink'
+    title: <h1>hello welcome to my slide show</h1>,
+    content: <p>hit right to proceed</p>,
   },
   {
     title: <h1>wowowo</h1>,
     content:
       <div>
-        <p>it's yo boi</p>
-        <p>johnno the wonno</p>
+        <p>we moved</p>
+        <p>amazing. try again?</p>
       </div>
   },
+  {
+    title: <h1>SHIT</h1>,
+    content:
+      <div>
+        <p>this is the end</p>
+        <p>hit left to go backwards!</p>
+      </div>
+  }
 ]
 
 
