@@ -15,7 +15,10 @@ const mySlides = [
     contentStyle: `
       font-size: 1.5em;
       transform: rotate(20deg);
-      `
+      `,
+    slideStyle: `
+      background-color: green;
+    `
   },
   {
     title: <h1>SHIT</h1>,

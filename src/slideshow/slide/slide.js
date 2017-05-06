@@ -1,18 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default ({ title, titleStyle, content, contentStyle, backgroundColor }) => {
+export default ({ title, titleStyle, content, contentStyle, slideStyle }) => {
 
-
+  const Slide = styled.div`${slideStyle}`
   const Title = styled.h1`${titleStyle}`
   const Content = styled.p`${contentStyle}`
-  const slideStyle = {
-    background: backgroundColor
-  }
+
   return (
-    <div className="slide" style={slideStyle}>
+    <Slide className="slide">
       <Title>{title}</ Title>
       <Content>{content}</Content>
-    </div>
+    </Slide>
   )
 }
